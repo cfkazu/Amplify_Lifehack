@@ -1,0 +1,26 @@
+.container {
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.link {
+    color: purple
+}
+.link:hover {
+    text-decoration: underline;
+}
+.list{
+    display: flex;
+    list-style: none;
+}
+.ul{
+    display: flex;
+    list-style: none;
+}
+.active {
+    color: purple;
+    font-weight: 700;
+}
+.active:hover {
+    text-decoration: underline;
+}

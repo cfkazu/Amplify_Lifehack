@@ -1,0 +1,89 @@
+{
+  "auth": {
+    "allamplifylifehackd480c9a5": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "allamplifylifehackd480c9a5CustomMessage",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "allamplifylifehackd480c9a5CustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_allamplifylifehackd480c9a5CustomMessage_EMAILMESSAGE": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "allamplifylifehackd480c9a5CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_allamplifylifehackd480c9a5CustomMessage_EMAILSUBJECT": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "allamplifylifehackd480c9a5CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_allamplifylifehackd480c9a5CustomMessage_REDIRECTURL": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "allamplifylifehackd480c9a5CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_allamplifylifehackd480c9a5CustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "allamplifylifehackd480c9a5CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_allamplifylifehackd480c9a5CustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "allamplifylifehackd480c9a5CustomMessage"
+        }
+      ]
+    }
+  }
+}
