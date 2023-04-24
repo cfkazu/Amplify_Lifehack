@@ -2,10 +2,8 @@ import Layout from "@/components/layout";
 import List from "@/components/List";
 import {searchposts_by_author} from "../api"
 export default function Post(props) {
-    return (
-        <Layout>
-           <List {...props} />
-        </Layout>
+    return (   
+        <List {...props} />
     )
 }
 

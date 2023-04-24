@@ -3,7 +3,7 @@ import awsExports from '../src/aws-exports';
 
 import { Amplify } from 'aws-amplify';
 import Layout from "@/components/layout";
-
+import '@aws-amplify/ui-react/styles.css';
 import Router,{ useRouter } from 'next/router'
 Amplify.configure(awsExports);
 export default function my_Login() {
